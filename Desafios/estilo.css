@@ -1,0 +1,193 @@
+@charset "UTF-8"; /*para caracteres com acento*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');/*para importar fontes de sites externo*/
+@font-face{font-family: 'Android'; src:url(../fontes/idroid.otf) format('opentype'); font-weight: normal;}/*para importar fonte de arquivo interno*/
+
+:root{/*criar variaveis dento do css*/
+    --cor0:#f3da4f;
+    --cor1:#83e1ad;
+    --cor2:#3ddc84;
+    --cor3:#2fa866;
+    --cor4:#1a5c37;
+    --cor5:#063d1e;
+    --cor6:#ffffff;
+    --fonte-padao: Arial, Verdana, Helvetica, Sans-serif;
+    --fonte-destaque: 'Bebas Neue';
+    --fonte-andrid: 'Android';
+}
+*{/*configuraçao global*/
+    margin: 0px;/*para tirar magens automaticas do navegador*/
+    padding: 0px;/*para tirar magens automaticas do navegador*/
+}
+
+body {
+    background-color: var(--cor0); /*para definir cor de fundo do bloco*/
+    font-family:var(--fonte-padao); /*para defitir o estilo da fonte*/
+}
+
+a.externo::after{ /*adicionar elemento apos texto*/
+    content: '\00A0\1F517'; /*texto que sera exibido   (00A0 codico de espaço)*/
+}
+
+header{
+    background-image: linear-gradient(to bottom,var(--cor2),var(--cor5)); /*para fazer um degrade de cores*/
+    background-color: var(--cor4); /*para definir cor de fundo do bloco*/
+    text-align: center;/*alinhar um texto no centro*/
+    min-width: 150px;/* para definir tamanho minimo*/
+    padding: 40px;/* definir margem interna*/
+}
+
+header > h1 {
+    color:var(--cor6);/*definir cor do texto*/ 
+    font-family: var(--fonte-destaque);/*para defitir o estilo da fonte*/
+    font-size: 3em;/*para aumentar tamanho do texto*/
+    margin-bottom: 20px;/*definir margem externa ou centralizar*/
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.616) ;/*para colocar sombras no texto*/
+}
+
+header > p {
+    color: var(--cor6);/*definir cor do texto*/ 
+    font-family: var(--fonte-destaque);/*para defitir o estilo da fonte*/
+    font-size: 1.2em;/*para aumentar tamanho do texto*/
+    max-width: 600px;/*definir tamanho maximo possivel*/
+    margin: auto;/*definir margem externa ou centralizar*/
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.616) ;/*para colocar sombras no texto*/
+}
+
+nav{
+    background-color: var(--cor5);/*para definir cor de fundo do bloco*/
+    padding: 10px;/* definir margem interna*/
+    box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.671);/*para colocar sombras no bloco*/
+}
+
+nav > a {
+    color: var(--cor6);/*definir cor do texto*/ 
+    padding: 10px;/* definir margem interna*/
+    text-decoration: none;/*para definir decoracao ou remover*/
+    font-weight: bold;/*para definir grosura do negrito ou remover*/
+    border-radius: 5px;/*para definir arredondamento das bordas*/
+    transition-duration: 1s;/*defirnir tempo para animaçao*/
+}
+
+nav > a:hover { /*para definir evento apos açao*/
+    background-color: var(--cor3);/*para definir cor de fundo do bloco*/
+    color: var(--cor5);/*definir cor do texto*/ 
+}
+
+main{
+    background-color: var(--cor6); /*para definir cor de fundo do bloco*/
+    min-width: 320px;/*definir tamanho minimo possivel*/
+    max-width: 900px;/*definir tamanho maximo possivel*/
+    margin: auto;/*definir margem externa ou centralizar*/
+    margin-bottom: 30px;/*definir margem externa ou centralizar*/
+    border-radius: 0px 0px 10px 10px;/*para definir arredondamento das bordas*/
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.466);/*para colocar sombras no bloco*/
+}
+
+main h1 {
+    color:var(--cor5);/*definir cor do texto*/ 
+    font-family: var(--fonte-andrid);/*para defitir o estilo da fonte*/
+}
+
+main h2 {
+    font-family: var(--fonte-andrid);/*para defitir o estilo da fonte*/
+    color: var(--cor4);/*definir cor do texto*/ 
+    font-size: 1.3em;/*para aumentar tamanho do texto*/
+    background-image: linear-gradient(to right, var(--cor1),transparent );/*para fazer um degrade de cores*/
+    text-indent: 10px;/*para definir espaco do paragrafo no começo da frase*/
+}
+
+main p {
+    margin: 15px 0px;/*definir margem externa ou centralizar*/
+    text-align: justify ; /*alinhar um texto*/
+    text-indent: 30px;/*para definir espaco do paragrafo no começo da frase*/
+    line-height: 2em;/*para defir espaco das linhas debaixo*/
+    font-size: 1.1em;/*para aumentar tamanho do texto*/
+
+}
+
+main strong {
+    color: var(--cor4);/*definir cor do texto*/ 
+    font-weight: bold;/*para definir grosura do negrito ou remover*/
+}
+
+main a {
+    text-decoration: none;/*para definir decoracao ou remover*/
+    font-weight: bold;/*para definir grosura do negrito ou remover*/
+    color: var(--cor5);/*definir cor do texto*/ 
+    background-color: var(--cor1);/*para definir cor de fundo do bloco*/
+    padding: 2px 6px; /* definir margem interna*/   
+}
+
+main a:hover { /*para definir evento apos açao*/
+    text-decoration: underline;/*para definir decoracao ou remover*/
+    color: var(--cor4);/*definir cor do texto*/ 
+}
+
+article img {
+    width: 100%;/*para definir lagura do elemento na caixa*/
+}
+
+.pequeno {
+    display: block;/*para definir o tipo da caixa*/
+    max-width:350px;/*definir tamanho maximo possivel*/
+    margin: auto;/*definir margem externa ou centralizar*/
+}
+
+.video{
+    background-color: var(--cor5);/*para definir cor de fundo do bloco*/
+    margin: 0px -20px 30px -20px;/*definir margem externa ou centralizar*/
+    padding: 20px;/* definir margem interna*/
+    position: relative;/*definir posiçao relativa da caixa*/
+    padding-bottom: 59%;/* definir margem interna de baixo*/
+}
+
+.video > iframe{
+    position: absolute; /*definir posiçao absoluta da caixa*/
+    top: 5%;/*para mover para cima o elemento*/
+    left: 5%;/*para mover para esquerda o elemento*/
+    width: 90%;/*para definir lagura do elemento na caixa*/
+    height: 90%;/*para definir altura do elemento na caixa*/
+}
+
+aside {
+    background-color: var(--cor1);/*para definir cor de fundo do bloco*/
+    padding: 20px; /* definir margem interna*/
+    border-radius: 10px;/*para definir arredondamento das bordas*/
+
+}
+
+aside > ul {
+    list-style-type: '\2714\00A0\00A0'; /*para adicionar icone personalizado*/
+    list-style-position: inside; /* para mover item para dento da caixa*/
+    columns: 2; /*para definir numero de colunas de uma lista*/
+}
+
+aside > h3 {
+    background-color: var(--cor4);/*para definir cor de fundo do bloco*/
+    color: var(--cor6);
+    padding: 5px; /* definir margem interna*/
+    margin: -20px -20px 0px -20px;/*definir margem externa ou centralizar*/
+    border-radius: 10px 10px 0px 0px;/*para definir arredondamento das bordas*/
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.137);/*para colocar sombras no bloco*/
+}
+
+footer {
+    background-color: var(--cor5);/*para definir cor de fundo do bloco*/
+    color: var(--cor6);/*definir cor do texto*/ 
+    text-align: center;/*alinhar um texto*/
+    font-size: 0.8em;/*para aumentar tamanho do texto*/
+    padding: 5px; /* definir margem interna*/    
+}
+
+footer a {
+    color: var(--cor6);/*definir cor do texto*/ 
+    text-decoration: none; /*para definir decoracao ou remover*/
+    font-weight: bolder;/*para definir grosura do negrito ou remover*/
+    
+}
+
+footer a:hover { /*para definir evento apos açao*/
+    text-decoration: underline;/*para definir decoracao ou remover*/
+    color: var(--cor1);/*definir cor do texto*/ 
+}
+

@@ -1,0 +1,50 @@
+create table usuarios
+(
+  cpf integer,
+  nome varchar(50),
+  sobrenome varchar(50),
+  cargo varchar(50), 
+  curso_id integer
+ );
+ 
+create table cursos
+(
+  id integer,
+  nome_curso varchar(50),
+  professor varchar(50), 
+  categoria varchar(50)
+ ); 
+ 
+ 
+insert into usuarios(cpf,nome,sobrenome,cargo,curso_id) 
+values ("100","Everton","Mendonca","professor","1");
+
+insert into usuarios(cpf,nome,sobrenome,cargo,curso_id)  
+values ("101","giovanna","Mendonca","aluno","1");
+
+insert into usuarios(cpf,nome,sobrenome,cargo,curso_id)  
+values ("102","Paty","Mendonca","aluno","1");
+
+insert into usuarios(cpf,nome,sobrenome,cargo,curso_id)  
+values ("103","Marcia","morais","aluno","2");
+
+insert into usuarios(cpf,nome,sobrenome,cargo,curso_id)
+values ("104","igor","kawan","aluno","2");
+
+insert into usuarios(cpf,nome,sobrenome,cargo,curso_id)
+values ("105","Lucas","morais","professor","2");
+
+insert into cursos(id,nome_curso,professor,categoria)
+values ("1","Manutenção", "Everton","Hardware");
+
+insert into cursos(id,nome_curso,professor,categoria)
+values ("2","Python","Lucas","Programação");
+
+update usuarios set curso_id = "2" where cpf = "101";
+
+-- delete from usuarios where cpf= "104"
+select * from usuarios;
+-- select * from cursos;
+-- select * from usuarios,cursos where curso_id='1';
+-- select * from usuarios,cursos where usuarios.curso_id = curso_id and usuarios.curso_id = "2";
+-- select * from usuarios, cursos where usuarios.curso_id = cursos.id and cursos.nome_curso = "Python";

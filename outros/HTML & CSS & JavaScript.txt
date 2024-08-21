@@ -1,0 +1,8 @@
+Essas são as três principais linguagens utilizadas no front-end da nossa aplicação, são utilizadas pelos dispositivos no próprio navegador. Mas a diferença entre eles é :
+
+O HTML não é considerado uma linguagem de programação como qualquer outra, ela e responsável por elementos da página como título, cabeçalho, parágrafos, imagens e outros. Toda a organização desses elementos é feita por HTML. Ele é utilizado para criar toda a estrutura da página e, para isso, utiliza as tags 
+O CSS, é uma linguagem de estilo. Ele é responsável por separar a parte estrutural da aplicação que ficará nas mãos do HTML da parte estética. Para facilitar a personalização com cores e estilos
+
+Mas as funções dinâmicas de um site, isso é feito com Javascript. Acrescenta movimento às páginas web, além de permitir o processamento de dados enviados e recebidos. Ele permite criar conteúdo animados de forma dinâmica e interativa 
+
+Por isso essas 3 ferramentas se completam para uma boa criação de interface web para o usuário final 

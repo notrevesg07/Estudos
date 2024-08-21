@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagens</title>
+    <style>
+    
+    .image > img{
+        width:100%;
+        height: 100%
+    }
+    .image > div > img{
+        position: absolute;
+        top:40%;
+        left:40%;
+        width:400px;
+        height:400px
+    }
+    :hover .image > div > img{
+        position: absolute;
+        top:30%;
+        left:30%;
+        width:700px;
+        height:700px
+    }
+    </style>
+</head>
+<body>
+    <div class="image">
+        <img src="midia/espaco.jpg" alt="">
+        <div><img src="midia/astronauta.png" alt=""></div>
+    </div>
+</body>
+</html>

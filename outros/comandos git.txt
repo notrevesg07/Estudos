@@ -1,0 +1,32 @@
+cd nome - entra na pasta
+cd .. - sair da pasta
+ls - lista todas as pastas
+mkdir git - cria pasta 
+echo "nome" > nome.extensão - criar arquivo com conteudo
+cat nome.extensão - ver arquivo
+git init - inicializar git
+git status - ver status dos arquivos
+git config --global user.name "nome" - configuarar usuario
+git config --global user.email "nome" - configuarar email
+git config --global core.editor "nano" - configuarar editor
+
+
+git add .\nome.extensão - adicionar ao stage para comit
+git commit - salvar arquivo 
+git commit -m "nome" - salvar arquivo com comentario
+git commit -am ""nome" " - adicionar ao stage e salvar junto
+
+changelog.md
+git log - todo o hitorico 
+git log - numero - numero de logs solicitados
+git log --oneline - historico resumido
+git log --stat - historico detalhado
+
+git branch - ver branch 
+git checkout nome - trocar branch 
+git branch nome - criar branch
+git checkout -b nome - criar branch e mudar
+git branch nome nome - criar branch e copiar 
+git branch -d nome - excluir branch 
+
+git merge nome - clonar branch para atual

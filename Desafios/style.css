@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+    margin: auto;
+
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size: 3.5em;
+}
+.imagem{
+    text-align: center;
+    
+}
+a{
+    text-decoration: none;
+    color: white;       
+}
+.ima{
+    text-align: center;
+}
