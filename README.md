@@ -16,3 +16,4 @@ Lista de Exercicios
 </html> <a href="/Desafios/index14.html"> Exercicio 14</a>
 </html> <a href="/Desafios/index15.html"> Exercicio 15</a><br>
 </html> <a href="/Desafios/index16.html"> Exercicio 16</a>
+</html> <a href="/Professor/exercicios/index.html"> ExercicioProf</a>
