@@ -1,0 +1,96 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root{/*definir variaveis no css*/
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif; /* definir variaver de fonte*/
+    --fonte2: "Passion One", sans-serif; /* definir variaver de fonte*/
+    --fonte3: "Sriracha", cursive; /* definir variaver de fonte*/
+}
+
+*{
+    margin: 0px; /*definir margens ou tiarar magem padrao do navedador*/
+    padding: 0px; /*definir margens ou tiarar magem padrao do navedador*/
+}
+
+body{
+    min-height: 100vh; /* definir tamanho horizontal baseado no tamanho da tela*/
+    background-color: rgb(48, 47, 47); /*definir cor de fundo*/
+    font-family: var(--fonte1);/*definir fonte com variavel pre definida*/
+    
+}
+
+header{
+    background-color: black;/*definir cor de fundo*/
+    color: white;/*definir cor de fundo*/
+    text-align: center;/*alinhar texto ao centro*/
+}
+
+header > h1 {
+    padding-top: 50px; /*definir margem interna*/
+    font-variant: small-caps;/*definir estilo da fonte com maiusculas diferentes*/
+    font-family: var(--fonte2);/*definir fonte com variavel pre definida*/
+    font-size: 10vw; /*definir tamanho da fonte baseado no tamaho horizontal da tela*/
+}
+
+header > p{
+    padding-bottom: 50px;/*definir margem interna*/
+}
+
+header a, footer a {
+    color: white;/*definir cor da fonte*/
+    text-decoration: none; /*definir decolraçao do texto*/
+    font-weight: bolder; /*definir tamanho do negrito do texto*/
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;/*definir decolraçao do texto*/
+}
+
+section{
+    padding-top: 10vh;/*definir margem interna baseado no tamaho vertical da tela*/
+    padding-bottom: 10vh;/*definir margem interna baseado no tamaho vertical da tela*/
+    line-height: 2em;/**/
+    padding-left: 30px;/*definir margem interna*/
+    font-family: var(--fonte3);/*definir fonte com variavel pre definida*/
+    font-size: 4vw;/**/
+}
+
+.normal{
+    background-color: white;/*definir cor de fundo*/
+    color: black; /*definir cor da fonte*/
+    
+}
+
+.imagem{
+    background-color: rgb(56, 54, 54);/*definir cor de fundo*/
+    color: white; /*definir cor da fonte*/
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.5);/* definir sombra da caixa*/
+    background-size: cover;/*definir que a imagem de fundo se adapite para preenche a tela*/
+    background-attachment: fixed;/*definir que a imagem de fundo  fique fixar em relaçao a ao conteudo */
+}
+
+.imagem > p{
+    display: inline-block;/* definir tipo da caixa */
+    padding: 5px;/*definir margem interna*/
+    width: 400px;/*definir tamanho da caixs*/
+    background-color: rgba(0, 0, 0, 0.322);/*definir cor de fundo*/
+    text-shadow: 1px 2px 0px black;/*definir sombra para o texto*/
+
+}
+
+#img1{
+    background-image: url(midia/background001.jpg);/*definir imagen de fundo */
+    background-position: right center;/*definir alinhanmento da imagem*/
+}
+#img2{
+    background-image: url(midia/background002.jpg);/*definir imagen de fundo */
+}
+
+footer{
+    background-color: black;/*definir cor de fundo*/
+    text-align: center;/*alinhar texto ao centro*/
+    color: white;/*definir cor da fonte*/
+    padding: 10px;/*definir margem internas*/
+}
+
