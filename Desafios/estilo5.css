@@ -1,7 +1,62 @@
 @charset "UTF-8";
+/*outras versoes*/
 
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+@media print {
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    main{
+        border: 2px solid black;
+    }
+    h1{
+        text-shadow:none ;
+        color: black;
+    }
+
+    #phone{display: none;}
+    #tablet{display: none;}
+    #print{display: block;}
+    #pc{display: none;}
+    #tv{display: none;}
+
+}
+
+@media screen and (min-width:768px) and (max-width:992px){
+    body{
+        background: url(midia/back-tablet.jpg);
+    }
+    #phone{display: none;}
+    #tablet{display: block;}
+    #print{display: none;}
+    #pc{display: none;}
+    #tv{display: none;}
+
+
+}
+
+@media screen and (min-width:992px) and (max-width:1200px){
+    body{
+        background: url(midia/back-pc.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+    #phone{display: none;}
+    #tablet{display: none;}
+    #print{display: none;}
+    #pc{display: block;}
+    #tv{display: none;}
+}
+
+@media screen and (min-width:1200px){
+    body{
+        background: url(midia/back-tv.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #phone{display: none;}
+    #tablet{display: none;}
+    #print{display: none;}
+    #pc{display: none;}
+    #tv{display: block;}
 }
