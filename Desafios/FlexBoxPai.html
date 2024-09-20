@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box 1</title>
+    <style>
+        div.conteiner {
+        background-color: lightsalmon;
+        display: flex;
+        flex-direction: row;
+        /*
+        flex-direction: row; linha direita pra esquerda
+        flex-direction: row-reverse; linha esquerda pra direita
+        flex-direction: column; coluna de cima para baixo
+        flex-direction: column-reverse; coluna de baixo para cima  
+        */
+        flex-wrap: nowrap;
+        /*
+        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
+        flex-wrap: nowrap;
+        flex-wrap: initial
+        */
+
+        flex-flow: row wrap;
+        /*
+        flex-flow: row wrap; 
+        flex-flow: row nowrap;
+        */
+        justify-content: space-around;
+        /*
+        flex: auto;
+        justify-content: flex-start; - alinhado no inicio
+        justify-content: flex-end; - alinhado no fim
+        justify-content: center; - alinhado no meio
+        justify-content: space-between; - alinhado nnas pontas com mesmo espaço no meio
+        justify-content: space-evenly; -  alinhado todos com mesma distancia
+        justify-content: space-around; -  alinhado centralizado entre os itens
+        */
+        align-items: flex-end;
+        /*para colunas
+        align-items: center; - estica o itens
+        align-items: flex-start; - alinta no inicio da coluna
+        align-items: flex-end; - alinta no fim da coluna
+        */
+        align-content: stretch;
+        /*para colunas
+        align-content: stretch; - esticado para preencher
+        align-content:flex-start; - alinhado no inicio
+        align-content:flex-end; - alinhado no fim
+        align-content:center; - alinhado no meio
+        align-content: space-between; - alinhado nas pontas com mesmo espaço no meio
+        align-content: space-evenly; -  alinhado todos com mesma distancia
+        align-content: space-around; -  alinhado centralizado entre os itens
+        */
+        /* alinha no meio horizantal e vertical
+        justify-content: center;   
+        align-items: center; 
+        */
+        }
+        div.item {
+        background-color: lightskyblue;
+        border: 1px solid black;
+        text-align: center;
+        
+        /*
+        flex: auto;
+        */
+        
+
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
